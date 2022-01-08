@@ -1,0 +1,30 @@
+
+Comment 12/05/21
+
+ADME penalty function now included as a call from the 
+  fitness function Ligand_GA_Fitness_Function_GOLD_ADME.m 
+  
+ADME_penalty.m script added 
+
+Ligand_GA_Crossover_Function now symmetrized to include 
+  left-right and right-left chromosome parenting.  
+  
+set_max, a global variable, is added to limit the number of 
+  submitted GOLD jobs to a CPU pool to avoid overloading 
+  available hard RAM.  set_max=1 is now the default, with 
+  1 molecule and its stereoisomers (ranging from 1 to 512, any 
+  number from max_stereosiomers).
+  
+  
+Version 2.0 available next and is being used now.  This version uses a 
+  Multi-Objective function, and Pareto front, to optimize/create small 
+  molecules in a multi-protein (enzyme) system.  i.e., high interaction to 
+  target protein(s) and low interaction to other protein(s), with different 
+  weights. The altered Paxlovid small molecules are being used in modification 
+  to create binders to the SARS-Cov-2 main protease and CYP 3A4 liver enzyme 
+  in effect to eliminate the Ritonavir molecule which is used in the Pfizer 
+  drug to slow the metabolism in the liver enzymes.  This is acheived by 
+  modifying Paxlovid in a way that it interacts strongly with the binding 
+  site of 3CL Mpro of SARS-Cov-2 and minimal interaction with the enzyme CYP 3A4.  
+  (Any number of proteins can now be used in the multi-protein ligand binding 
+  system, and version 2 to be released.)  

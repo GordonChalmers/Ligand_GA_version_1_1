@@ -1,0 +1,14 @@
+
+10/12 Comment
+
+This makes no difference in stereoisomer count, but to 
+eliminate unnecesary output, change line 56 of 
+
+Ligand_GA_Fitness_Function_GOLD_ADME.m 
+
+from:  system("rm -r "+ligand_dir+"/molecule"+molecule_idx+"/*.*);
+to:    system("rm -r "+ligand_dir+"/molecule"+molecule_idx+"/*);
+
+The latter deletes files and directories, not just files, and the 
+count of files remains the same.  The effect of the change is to 
+get rid of unnecesary displayed output.  
