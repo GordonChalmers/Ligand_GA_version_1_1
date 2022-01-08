@@ -1,0 +1,103 @@
+Brief Description of computational research:
+
+The work in the context of the GACRC is to use the 
+computing resources with the recently developed software 
+Ligand GA.  This project and software enables the 
+computational design of small molecules and pharmacologicals 
+such as therapeutics and anti-virals.  The methods and 
+software are described in:   
+
+Ligand GA: a genetic algorithm for automated protein design, 
+submitted to J. Comp. Chem.  bioRxiv: doi: 10.1101/2021.10.11.463970. 
+
+The software and much documentation can be found in the 
+download link given in the paper.  
+
+A primary advantage of this approach to model the interactions 
+of a protein-ligand complex is that it doesn't require the use 
+of molecular databases, which are tiny in comparison to the 
+space of molecular compounds.  Repurposing and slightly altering 
+known molecules are the primary approach in modern day drug 
+design.  
+
+Several example proteins have been examined so far in the 
+Ligand GA work, and version 2: Ligand Multi-Protein: main 
+protease 3CL of SARS-Cov-2, cyclooxygenase COX-2, and CYP 
+3A4.  The work/software has been used to find (computationally) 
+new inhibitors of the main protease and anti-inflammatories/pain 
+blockers, by seeding Ligand GA with Simeprevir and others, and 
+Aspirin, Ibuprofen, and Celecoxib.  
+
+Currently Ligand GA is being used to modify Paxlovid, a repurposed 
+and slightly altered injectable molecule developed by Pfizer for 
+treating the 2003 SARS-Cov-1 virus.  In its orally ingestible form, 
+Paxlovid is metabolized too quickly by the CYP liver enzymes (mostly 
+CYP 3A4).  Ritonavir, a very toxic molecule, used to treat HIV, 
+Hepatitus C, and other diseases, was added to inhibit the CYP enzymes 
+to slow the metabolism of Paxlovid.  But its addition restricts the 
+Pfizer Paxlovid/Ritonavir drug to a high risk group due to Ritonavir's 
+toxicity.  
+
+Ligand GA was formulated and coded to use a multi-protein system: 
+high binding/interaction of a small molecule to a target protein, 
+low binding/interaction to a set of others, or any combination.  
+Constructing an inhibitor of the SARS-Cov-2 Mpro 3CL with reduced 
+metabolic activity of the CYP 3A4 enzyme would eliminate the need 
+for Ritonavir after modifications from an initial starting point of 
+Paxlovid.  This example use is in progress with positive partial 
+results.  In going from 1 protein to a 2 or N-protein system does 
+multiple the computational costs by N however. 
+
+In addition, characterizing the quality of a ligand binding/interaction 
+to a protein can not be done by a simple docking score.  Constraints 
+or restrictions in small molecular inhibitor design are generally 
+included in Ligand GA, such as human ADME properties, amino acid 
+specific interactions in the terrain of a 'binding' site, geometric 
+properties and flexibilty of small molecules, and more.  The inclusion 
+of structural aspects (functional groups, sub-structure) and database 
+information can be included, in particular to synthesis predictability.  
+
+The primary source of computational cost is in the use of the CCDC 
+GOLD ligand-protein docking software.  Without loss of accuracy, this 
+software requires very large numbers of docking jobs, on the order of 
+1M for a single run.  The required computational resources, time spent, 
+and in the possibility of using Microsoft Azure cloud computing, the 
+possible cost.  Very real progress in drug-like molecular design can 
+be made in real-time with the use of 128 to 512 processors.  The resources 
+at the GACRC are important.
+
+Expected number of Users
+1
+
+Can you estimate the amount of storage needed?
+Very minimal disk is required, maybe 50 GB, in intermittent bursts.  
+The raw CPU and RAM is the important resource.  There are different types of 
+output set by Ligand GA parameters, and with specialized use the amount 
+of temporary disk space required is larger.
+
+Software planned to be used by your group
+Ligand GA (Ligand Multi-Protein GA), Matlab, CCDC GOLD, AM+MN Corina Classic, 
+MglTools
+
+PI Requires User Account?
+No.  Gordon Chalmers requires a user account.
+
+Email
+gordoncs@uga.edu 
+
+MyID
+810298877 (Gordon Chalmers)
+
+Phone Number
+706 612 7684 (Gordon Chalmers)
+
+Notes
+GACRC has Matlab installed.  I have an academic license for CCDC GOLD 
+and AM+MN Corina Classic.  Each comes with 2 installations, i.e. different 
+IP addresses that can be transferred.  I will transfer one of each of the 
+licenses to the appropriate GACRC IP address; the installation only requires 
+copying the executables to the GACRC and this license key (both softwares 
+do routinely communicate with their institutions for molecular information 
+and to verify the license).  MglTools is open source and will eventually be 
+removed from Ligand GA, this is a small component used in open source docking 
+software.
