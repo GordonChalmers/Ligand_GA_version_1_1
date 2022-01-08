@@ -1,0 +1,17 @@
+
+
+********************************************************************************
+Ligand in file /home/gordon/Vector_Ligand_GA_GOLD/version2/Simeprevir/molecule11/stereoisomer3/molecule.003.pdb,
+starting at address 0 raised the following warnings and/or errors
+Warning message: 
+atom no   20 in /home/gordon/Vector_Ligand_GA_GOLD/version2/Simeprevir/molecule11/stereoisomer3/molecule.003.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no   30 in /home/gordon/Vector_Ligand_GA_GOLD/version2/Simeprevir/molecule11/stereoisomer3/molecule.003.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no   35 in /home/gordon/Vector_Ligand_GA_GOLD/version2/Simeprevir/molecule11/stereoisomer3/molecule.003.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
