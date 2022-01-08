@@ -1,8 +1,0 @@
-# File containing a listing of the fitness of the top-ranked
-# individual for each ligand docked in GOLD.
-#
-# Format is:
-#
-#     Score     S(PLP)   S(hbond)     S(cho)   S(metal)  DE(clash)   DE(tors)     intcor     time                               File name                Ligand name
-
-     74.82     -74.97       0.00       0.43       0.00       0.38       1.82       2.36   95.897  '/home/gordon/Vector_Ligand_GA_GOLD/version2/Simeprevir/molecule11/stereoisomer3//gold_soln_molecule.003_m1_2.mol2'                '(unknown)'

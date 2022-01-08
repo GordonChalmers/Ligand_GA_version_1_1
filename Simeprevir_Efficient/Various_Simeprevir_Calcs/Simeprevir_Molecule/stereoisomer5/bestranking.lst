@@ -1,8 +1,0 @@
-# File containing a listing of the fitness of the top-ranked
-# individual for each ligand docked in GOLD.
-#
-# Format is:
-#
-#     Score     S(PLP)   S(hbond)     S(cho)   S(metal)  DE(clash)   DE(tors)     intcor     time                               File name                Ligand name
-
-     88.89     -85.27       2.00       0.00       0.00       0.00       2.31       2.25   592.000  'C:/Users/chalm/Desktop/Simeprevir_molecule/stereoisomer5\gold_soln_docked_molecule_file5_m1_2.mol2'  'unknown|molecule.005|pdb|1|dock1'
